@@ -30,7 +30,7 @@ axis(1, at=c(0, length(gap)/2, length(gap)), labels=c("Thur", "Fri", "Sat"))
 ## Plot 1,2
 plot(data$datetime, volt, type="l", ylab="Voltage", xlab="datetime")
 
-## Plot 1,3
+## Plot 2,1
 plot(subm1, type="l", col="black",
      xaxt="n", ylab="Energy sub metering", xlab="")
 axis(1, at=c(0, length(gap)/2, length(gap)), labels=c("Thur", "Fri", "Sat"))
@@ -40,6 +40,6 @@ legend("topright", bty= "n", cex=0.8, pt.cex = 1,
        lwd=1, col=c("black", "red", "blue"),
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
-## Plot 1,4
+## Plot 2,2
 plot(data$datetime, grp, type="l", ylab="Voltage", xlab="datetime")
 dev.off()
